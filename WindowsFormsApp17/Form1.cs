@@ -142,7 +142,7 @@ namespace WindowsFormsApp17
                 finich = true;
                 MessageBox.Show("Победил тот кто играл ноликами!");
                 o_Rezultat_Val++;
-                updateVinResults();
+                 updateVinResults();
             }
             else if (OValues.Count + xValues.Count == 9)
             {
@@ -151,6 +151,66 @@ namespace WindowsFormsApp17
             }
         }
 
+        /// <summary>
+        /// Обновляем значения побед
+        /// </summary>
+        private void updateVinResults()
+        {
 
+            x_Rezultat.Text = x_Rezultat_Val.ToString();
+            o_Rezultat.Text = o_Rezultat_Val.ToString();
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <param name="winResults">Выигрышные комбинации</param>
+        /// <param name="values">Набранные комбинации</param>
+        /// <returns>True - победа</returns>
+        private bool checkWin(string[][] winResults, List<string> values)
+        {
+            bool ex = true;
+
+            for (int i = 0; i < winResults.Length; i++)
+            {
+                ex = true;
+                for (int j = 0; j < winResults[i].Length; j++)
+                {
+                    ex = ex && values.Contains(winResults[i][j]);
+                }
+                if (ex)
+                    break;
+            }
+
+            return ex;
+        }
+        private void cpuWork()
+        {
+            Button but;
+
+            do
+            {
+                but = (Button)gamePolePanel.Controls[r.Next(0, gamePolePanel.Controls.Count)];
+            } while (!finich && (but.Text.Length > 0));
+            setButtonValue(but);
+            checkFinal();
+        }
+
+        /// <summary>
+        /// Очищаем игровое поле 
+        /// </summary>
+        private void clearGameFieldUniversal()
+        {
+            Button but;
+            foreach (object elem in gamePolePanel.Controls)
+            {
+                if (elem is Button)
+                {
+
+                    but = (Button)elem;
+                    but.Text = "";
+                    but.ForeColor = Color.Black;
+                }
+            }
+        }
     }
 }
