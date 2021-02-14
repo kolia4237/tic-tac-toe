@@ -154,9 +154,85 @@ namespace WindowsFormsApp17
             this.Pole_00.UseVisualStyleBackColor = true;
             // -----------------------------------------------------------------
 
+            this.startVsPlayer.Location = new System.Drawing.Point(298, 272);
+            this.startVsPlayer.Name = "startVsPlayer";
+            this.startVsPlayer.Size = new System.Drawing.Size(195, 37);
+            this.startVsPlayer.TabIndex = 1;
+            this.startVsPlayer.Text = "Игра (на двух игроков)";
+            this.startVsPlayer.UseVisualStyleBackColor = true;
+            this.startVsPlayer.Click += new System.EventHandler(this.startVsPlayer_Click);
+            // ----------------------------------------------------------------
+
+            this.start_comp.Location = new System.Drawing.Point(28, 272);
+            this.start_comp.Name = "startVsCpu";
+            this.start_comp.Size = new System.Drawing.Size(195, 37);
+            this.start_comp.TabIndex = 2;
+            this.start_comp.Text = "игра с компьютером";
+            this.start_comp.UseVisualStyleBackColor = true;
+            this.start_comp.Click += new System.EventHandler(this.startVsCpu_Click);
+            // -----------------------------------------------------------------
+
+            this.x_Rezultat_Label.ForeColor = System.Drawing.Color.Red;
+            this.x_Rezultat_Label.Location = new System.Drawing.Point(220, 117);
+            this.x_Rezultat_Label.Name = "xRexultLabel";
+            this.x_Rezultat_Label.Size = new System.Drawing.Size(150, 46);
+            this.x_Rezultat_Label.TabIndex = 3;
+
+            this.x_Rezultat_Label.Text = "X --------> Счет";
+            this.x_Rezultat_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // ------------------------------------------------------------------
+
+            this.o_Rezultat_Label.ForeColor = System.Drawing.Color.Green;
+            this.o_Rezultat_Label.Location = new System.Drawing.Point(220, 163);
+            this.o_Rezultat_Label.Name = "o_Rezultat_Label";
+            this.o_Rezultat_Label.Size = new System.Drawing.Size(150, 46);
+            this.o_Rezultat_Label.TabIndex = 4;
+            this.o_Rezultat_Label.Text = "O --------> Счет";
+            this.o_Rezultat_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // --------------------------------------------------------------------
+
+            this.x_Rezultat.ForeColor = System.Drawing.Color.Black;
+            this.x_Rezultat.Location = new System.Drawing.Point(360, 117);
+            this.x_Rezultat.Name = "x_Rezultat_Label";
+            this.x_Rezultat.Size = new System.Drawing.Size(350, 46);
+            this.x_Rezultat.TabIndex = 5;
+            this.x_Rezultat.Text = "0";
+            this.x_Rezultat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // ------------------------------------------------------------------------
+
+            this.o_Rezultat.ForeColor = System.Drawing.Color.Black;
+            this.o_Rezultat.Location = new System.Drawing.Point(360, 163);
+            this.o_Rezultat.Name = "oResult";
+            this.o_Rezultat.Size = new System.Drawing.Size(350, 46);
+            this.o_Rezultat.TabIndex = 6;
+            this.o_Rezultat.Text = "0";
+            this.o_Rezultat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // ----------------------------------------------------------
+
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(621, 417);
+            this.Controls.Add(this.o_Rezultat);
+            this.Controls.Add(this.x_Rezultat);
+            this.Controls.Add(this.o_Rezultat_Label);
+            this.Controls.Add(this.x_Rezultat_Label);
+            this.Controls.Add(this.start_comp);
+            this.Controls.Add(this.startVsPlayer);
+            this.Controls.Add(this.gamePolePanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "---------------игра крестики-нолики-------------";
+            this.gamePolePanel.ResumeLayout(false);
+            this.ResumeLayout(false);
 
 
+            box.RightToLeft = RightToLeft.Yes;
+            box.KeyDown += Box_KeyDown;
         }
+
+
+
     }
 }
 
