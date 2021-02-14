@@ -112,6 +112,47 @@ namespace WindowsFormsApp17
             this.Pole_02.TabIndex = 15;
             this.Pole_02.UseVisualStyleBackColor = true;
             // ----------------------------------------------------------------
+            this.Pole_21.Location = new System.Drawing.Point(134, 70);
+            this.Pole_21.Name = "Pole_21";
+            this.Pole_21.Size = new System.Drawing.Size(55, 55);
+            this.Pole_21.TabIndex = 14;
+            this.Pole_21.UseVisualStyleBackColor = true;
+            // ---------------------------------------------------------------
+
+            this.Pole_11.Location = new System.Drawing.Point(73, 70);
+            this.Pole_11.Name = "Pole_11";
+            this.Pole_11.Size = new System.Drawing.Size(55, 55);
+            this.Pole_11.TabIndex = 13;
+            this.Pole_11.UseVisualStyleBackColor = true;
+            // ----------------------------------------------------------------
+
+            this.Pole_01.Location = new System.Drawing.Point(12, 70);
+            this.Pole_01.Name = "Pole_01";
+            this.Pole_01.Size = new System.Drawing.Size(55, 55);
+            this.Pole_01.TabIndex = 12;
+            this.Pole_01.UseVisualStyleBackColor = true;
+            // ----------------------------------------------------------------------
+
+            this.Pole_20.Location = new System.Drawing.Point(134, 9);
+            this.Pole_20.Name = "Pole_20";
+            this.Pole_20.Size = new System.Drawing.Size(55, 55);
+            this.Pole_20.TabIndex = 11;
+            this.Pole_20.UseVisualStyleBackColor = true;
+            // --------------------------------------------------------------------------
+
+            this.Pole_10.Location = new System.Drawing.Point(73, 9);
+            this.Pole_10.Name = "Pole_10";
+            this.Pole_10.Size = new System.Drawing.Size(55, 55);
+            this.Pole_10.TabIndex = 10;
+            this.Pole_10.UseVisualStyleBackColor = true;
+            // ----------------------------------------------------------------
+
+            this.Pole_00.Location = new System.Drawing.Point(12, 9);
+            this.Pole_00.Name = "Pole_00";
+            this.Pole_00.Size = new System.Drawing.Size(55, 55);
+            this.Pole_00.TabIndex = 9;
+            this.Pole_00.UseVisualStyleBackColor = true;
+            // -----------------------------------------------------------------
 
 
 
