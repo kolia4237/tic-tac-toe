@@ -77,6 +77,41 @@ namespace WindowsFormsApp17
             this.gamePolePanel.Name = "gamePolePanel";
             this.gamePolePanel.Size = new System.Drawing.Size(200, 194);
             this.gamePolePanel.TabIndex = 0;
+            // ----------------------------------------
+            this.box = new TextBox();
+            box.Location = new Point(260, 20);
+            box.Size = new Size(300, 80);
+            box.Multiline = true;
+            box.ScrollBars = ScrollBars.Both;
+            box.BorderStyle = BorderStyle.None;
+
+            box.Text = "           Вас приветствует игра крестики нолики. Сюда можете записывать результаты";
+
+
+
+            //add 
+            this.Controls.Add(box);
+
+            this.Pole_22.Location = new System.Drawing.Point(134, 131);
+            this.Pole_22.Name = "Pole_22";
+            this.Pole_22.Size = new System.Drawing.Size(55, 55);
+            this.Pole_22.TabIndex = 17;
+            this.Pole_22.UseVisualStyleBackColor = true;
+            // ----------------------------------------------------------------
+
+            this.Pole_12.Location = new System.Drawing.Point(73, 131);
+            this.Pole_12.Name = "Pole_12";
+            this.Pole_12.Size = new System.Drawing.Size(55, 55);
+            this.Pole_12.TabIndex = 16;
+            this.Pole_12.UseVisualStyleBackColor = true;
+            // --------------------------------------------------------------
+
+            this.Pole_02.Location = new System.Drawing.Point(12, 131);
+            this.Pole_02.Name = "Pole_02";
+            this.Pole_02.Size = new System.Drawing.Size(55, 55);
+            this.Pole_02.TabIndex = 15;
+            this.Pole_02.UseVisualStyleBackColor = true;
+            // ----------------------------------------------------------------
 
 
 
