@@ -1,4 +1,7 @@
 ﻿
+using System.Drawing;
+using System.Windows.Forms;
+
 namespace WindowsFormsApp17
 {
     partial class Form1
@@ -230,6 +233,33 @@ namespace WindowsFormsApp17
             box.RightToLeft = RightToLeft.Yes;
             box.KeyDown += Box_KeyDown;
         }
+
+
+        #endregion
+        private System.Windows.Forms.Panel gamePolePanel;
+        private System.Windows.Forms.Button Pole_22;
+        private System.Windows.Forms.Button Pole_12;
+        private System.Windows.Forms.Button Pole_02;
+        private System.Windows.Forms.Button Pole_21;
+        private System.Windows.Forms.Button Pole_11;
+        private System.Windows.Forms.Button Pole_01;
+        private System.Windows.Forms.Button Pole_20;
+        private System.Windows.Forms.Button Pole_10;
+        private System.Windows.Forms.Button Pole_00;
+        private System.Windows.Forms.Button startVsPlayer;
+        private System.Windows.Forms.Button start_comp;
+        private System.Windows.Forms.Label x_Rezultat_Label;
+        private System.Windows.Forms.Label o_Rezultat_Label;
+        private System.Windows.Forms.Label x_Rezultat;
+        private System.Windows.Forms.Label o_Rezultat;
+
+        private void Box_KeyDown(object sender, KeyEventArgs e)
+        {
+            this.Text = e.KeyCode.ToString();
+        }
+        TextBox box;
+        TextBox text;
+
 
 
 
